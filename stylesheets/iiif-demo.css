@@ -1,0 +1,95 @@
+.iiif-demo {
+  padding: 10px 0;
+}
+
+.iiif-demo .try-it {
+  overflow: auto;
+}
+
+.iiif-demo .try-it h2 {
+  color: #444c5a;
+}
+
+.iiif-demo .try-it .label {
+  color: #6d7180;
+  font-weight: 300;
+}
+
+.iiif-demo .try-it .iiif-url {
+  font-family: 'Inconsolata', sans-serif;
+  word-wrap: break-word;
+}
+
+.iiif-demo .try-it .iiif-url {
+  list-style: none;
+  padding: 0;
+}
+
+.iiif-demo .try-it .iiif-url li {
+  float: left;
+}
+
+.try-it .iiif-url .param-label, .try-it .iiif-url .param-label-none {
+  color: #9496A4;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.try-it .iiif-url .param-value {
+  border-top: 1px solid #d9d9d9;
+  border-right: 1px solid #272726;
+  border-left: 1px solid #272726;
+  border-radius: 12px;
+  padding-top: 7px;
+}
+
+.try-it .iiif-url .param-value-none {
+ padding-top: 7px;
+}
+
+.try-it .iiif-url .param-label-none {
+  border: 0;
+}
+
+.iiif-demo .try-it .iiif-url select {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
+  background: -webkit-linear-gradient(#749619, #527f0e);
+  background: -moz-linear-gradient(#749619, #527f0e);
+  background: -o-linear-gradient(#749619, #527f0e);
+  background: -ms-linear-gradient(#749619, #527f0e);
+  background: linear-gradient(#749619, #527f0e);
+  background-color: #659e10;
+  background-image: url(../images/icon-select-arrow.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  border: 0px solid #ccc;
+
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Inconsolata', sans-serif;
+  margin: 0 2px;
+  padding: 4px 25px 4px 8px;
+  text-indent: 0.01px; /* Removes default arrow from firefox*/
+  text-overflow: "";  /*Removes default arrow from firefox*/
+  -moz-appearance: none; /* Removes Default Firefox style*/
+  -webkit-appearance: none;
+}
+
+.iiif-demo .try-it .iiif-url select option {
+  font-family: 'Inconsolata', sans-serif;
+}
+
+.iiif-demo .iiif-image-container {
+  background: transparent url(../images/ajax-loader.gif) 10px 10px no-repeat;
+  height: 450px;
+  margin: 20px 0 0 0;
+  overflow: auto;
+}
+
+.main-interactive-img-info {
+  color: #9496A4;
+  font-size: 13px;
+}
