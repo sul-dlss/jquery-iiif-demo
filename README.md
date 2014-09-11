@@ -13,8 +13,6 @@ Include script *after* the jQuery library:
 
 ## Usage Example
 
-Create session cookie:
-
 ```javascript
 $('.demo').iiifDemo({
   selectOptions: {
