@@ -11,8 +11,6 @@ Include script *after* the jQuery library:
 <script src="/path/to/jquery.iiif-demo.js"></script>
 ```
 
-**Do not include the script directly from GitHub (http://raw.github.com/...).**
-
 ## Usage Example
 
 Create session cookie:
