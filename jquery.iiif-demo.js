@@ -27,9 +27,6 @@
       this.$selectSize     = this.$element.find('.iiif-select-size'),
       this.$selectRotation = this.$element.find('.iiif-select-rotation');
 
-      this.frameHeight = this.$imgContainer.height();
-      this.frameWidth  = this.$imgContainer.width();
-
       this.calculateSelectValues();
       this.render();
       this.bindEvents();
@@ -70,14 +67,14 @@
 
 
     calculateSelectValues: function () {
-      var w = this.frameWidth,
-          h = this.frameHeight,
+      var w = this.$imgContainer.width(),
+          h = this.$imgContainer.height(),
           regex = /([wh](\s*[-+]\s*\d+)?)/i, // matches 'w - 200,' and ',h'
           _this = this;
 
       $.each(this.options.selectOptions, function(region, values) {
         $.each(values, function(size, rotation) {
-          // options like 'w - 200,' & ',h' are evaluated with frameWidth and frameHeight
+          // options like 'w - 200,' & ',h' are evaluated with image container dimensions
           size = size.replace(regex, function(match) {
             return _this.roundTo(parseInt(eval(match)), 10);
           });
@@ -97,6 +94,7 @@
       var _this = this;
 
       $(window).resize(function() {
+        _this.selectValues = {};
         _this.calculateSelectValues();
         _this.render();
       });
