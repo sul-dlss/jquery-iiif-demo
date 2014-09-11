@@ -1,7 +1,9 @@
 jQuery IIIF Demo
 ================
 
-A jQuery plugin to create interactive IIIF demo
+A jQuery plugin for creating interactive demos using IIIF URLs.
+
+Plugin demo page is at [http://sul-dlss.github.io/jquery-iiif-demo](http://sul-dlss.github.io/jquery-iiif-demo)
 
 ## Installation
 
