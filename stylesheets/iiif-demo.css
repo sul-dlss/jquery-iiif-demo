@@ -84,7 +84,7 @@
 
 .iiif-demo .iiif-image-container {
   background: transparent url(../images/ajax-loader.gif) 10px 10px no-repeat;
-  height: 450px;
+  height: 460px;
   margin: 20px 0 0 0;
   overflow: auto;
 }
