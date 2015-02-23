@@ -38,7 +38,7 @@ $('.demo').iiifDemo({
     region: 'full',
     size: 'full',
     rotation: 0,
-    quality: 'native',
+    quality: 'default',
     format: 'jpg'
   }
 });
